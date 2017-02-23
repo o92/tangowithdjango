@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['192.168.0.108']
 
 #Path to templates
 TEMPLATE_PATH = os.path.join(BASE_DIR, 'templates')
+STATIC_PATH = os.path.join(BASE_DIR,'static')
 
 # Application definition
 
@@ -125,3 +126,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+   STATIC_PATH,
+]
